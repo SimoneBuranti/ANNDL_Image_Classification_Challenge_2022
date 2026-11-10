@@ -1,4 +1,4 @@
-# 🌱 Plant Image Classification – ANNDL Challenge 2
+# 🌱 Plant Image Classification – ANNDL Challenge 1
 
 This project was developed as part of the **Artificial Neural Networks and Deep Learning (ANNDL) Challenge 1**.  
 The goal was to build a **Convolutional Neural Network (CNN)** capable of classifying **plant images into 8 classes**.  
