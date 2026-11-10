@@ -1,17 +1,18 @@
 # 🌱 Plant Image Classification – ANNDL Challenge 1
 
-This project was developed as part of the **Artificial Neural Networks and Deep Learning (ANNDL) Challenge 1**.  
+This project was developed as part of the [**Artificial Neural Networks and Deep Learning (ANNDL) Challenge 1**](https://codalab.lisn.upsaclay.fr/competitions/8522#learn_the_details-overview).  
 The goal was to build a **Convolutional Neural Network (CNN)** capable of classifying **plant images into 8 classes**.  
 
 Through a **bottom-up approach**, we started with simple models and progressively increased complexity, experimenting with **data augmentation, transfer learning, fine-tuning, and regularization** techniques.  
-The final model achieved **91.1% accuracy on the test set**, and the project received a **6/7** evaluation score.  
+
+The final model achieved **91.1% accuracy on the test set**, and ranked **39th out of 515** participants (**top 8%**) on the Codalab leaderboard. 
 
 ---
 
 ## 📂 Dataset  
 - Images were distributed across **8 plant classes**.  
 - Dataset split: **85% training / 15% validation** (stratified sampling).  
-- No explicit test set was used; evaluation relied on the **Codalab platform**.  
+- No explicit test set was used, evaluation relied on the **Codalab platform**.  
 
 ---
 
@@ -24,7 +25,7 @@ The final model achieved **91.1% accuracy on the test set**, and the project rec
 ### 2. **Transfer Learning & Fine-Tuning**  
 We experimented with several pre-trained models:  
 - **VGG16** – First attempt, limited performance but interpretable.  
-- **DenseNet201** – Better results; also tested with **10-fold cross-validation**.  
+- **DenseNet201** – Better results, also tested with **10-fold cross-validation**.  
 - **ConvNeXt Base** – Showed the best performance among tested models.  
 
 ### 3. **Regularization & Refinements**  
@@ -44,6 +45,7 @@ We experimented with several pre-trained models:
 ---
 
 ## 📊 Results  
+- **Leaderboard:** ranked **39th out of 515** participants (**top 8%**).
 - Final model: **ConvNeXt Base + CutMix + GaussianNoise + Dropout**.  
 - Achieved **91.1% test accuracy** on Codalab.  
 - Final evaluation: **6/7 score**.  
